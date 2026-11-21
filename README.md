@@ -1,6 +1,6 @@
 # ICT Mech Royale bot
 
-This candidate starts from the official TypeScript example. It moves into the next safe circle, holds once it reaches a buffer inside the circle, and strafes when it sees an opponent inside that buffer.
+This candidate starts from the official TypeScript example. It reads the arena's building footprints into a navigation grid and searches for nearby cover, prioritizing the current and next safe circles. It routes around marked obstacles and remembers the last visible opponent for three seconds so it can stay behind cover. The navigation grid is two-dimensional and does not model terrain height.
 
 Run the official checker from the extracted `mechfight-kit` directory, with this project beside it. Node.js 22.18 or newer can run the TypeScript files directly.
 
